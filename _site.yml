@@ -5,6 +5,8 @@ navbar:
   right:
     - text: "About"
       href: about.html
+    - text: "Dashborad"
+      href: dashboard.html
     - icon: fa-envelope fa-lg
       href: mailto:<pl2848@cumc.columbia.edu>
     - icon: fa-github fa-lg
