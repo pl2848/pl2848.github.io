@@ -1,0 +1,15 @@
+---
+title: "Plotly"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+---
+
+# This is Pei's awesome website
+
+We're going to make some plotly plots.
+
+
+
+
