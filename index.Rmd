@@ -1,0 +1,28 @@
+---
+title: "My awesome website"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+---
+
+# This is Pei's awesome website
+
+![](https://media.giphy.com/media/drXGoW1iudhKw/giphy.gif)
+
+Here's some tect, I like the interent. I use [google](https://www.google.com/) all the time to do data science.
+
+They are my baby cats Tomato and May, who would like to meet you all.
+![](Images/tomato.jpg)
+![](Images/may.jpg)
+
+```{r}
+library(tidyverse)
+
+```
+
+
+Here's a direct link to the about page: [about](about.html)
+
+
+I also made a bonus [extra page](extra_page.html)
