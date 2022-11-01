@@ -1,5 +1,5 @@
 ---
-title: "My awesome website"
+title: "Pei Liu's awesome website"
 output: 
   html_document:
     toc: true
@@ -8,13 +8,17 @@ output:
 
 # This is Pei's awesome website
 
-![](https://media.giphy.com/media/drXGoW1iudhKw/giphy.gif)
+![](https://media.giphy.com/media/4FQMuOKR6zQRO/giphy.gif)
 
-Here's some tect, I like the interent. I use [google](https://www.google.com/) all the time to do data science.
+Here's some facts, I like the internet. 
+
+I use [google](https://www.google.com/) all the time to do data science.
+
+I use 
 
 They are my baby cats Tomato and May, who would like to meet you all.
-![](Images/tomato.jpg)
-![](Images/may.jpg)
+<img src="images/tomato.jpg" style="width:45%">
+<img src="images/may.jpg" style="width:45%">
 
 ```{r}
 library(tidyverse)
