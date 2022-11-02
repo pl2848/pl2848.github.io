@@ -1,15 +1,16 @@
 ---
-title: "Pei Liu's website for Homework 4"
+title: "Pei Liu's website"
 output: 
   html_document:
     toc: true
     toc_float: true
 ---
 
+**This is a website for P8105 Homework 4**
+<img src="https://media.giphy.com/media/4FQMuOKR6zQRO/giphy.gif" class="center">
 
-![](https://media.giphy.com/media/4FQMuOKR6zQRO/giphy.gif)
 
-# Here's some facts... 
+**Here's some facts... **
 
 - My name is Pei Liu, I am now a 1st-year Biostatistics student at Columbia University Mailman School of Public Health.
 
@@ -25,7 +26,7 @@ output:
 
 
 
-# There are some components of my websites: 
+**There are some components of my websites: **
 
 * Links for my email, github page and linkedin are in the navigation bar.
 
