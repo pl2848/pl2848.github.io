@@ -72,6 +72,3 @@ nyc_inspections_italian %>%
   plot_ly(y = ~score, color = ~boro, type = "box", colors = "viridis")
 ```
 
-## Create a dashboard ...
-
-Not here though.
