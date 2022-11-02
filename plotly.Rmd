@@ -18,7 +18,7 @@ library(plotly)
 
 
 ```{r}
-data("nyc_inspections")
+data("rest_inspec")
 
 ```
 
@@ -31,18 +31,22 @@ nyc_inspections_italian =
   drop_na() %>% 
   filter(cuisine_description == "Italian")
 
+head(nyc_inspections_italian, n = 100)
 ```
 
 
 
 ```{r}
-# Plotly scatterplot: This scatter plot shows the distribution of Italian restaurant with grade A.
+# Plotly scatterplot: This scatter plot shows the mean score of Italian restaurants across 2022 every month by Borough.
 nyc_inspections_italian %>%
-  filter(grade == "A") %>% 
-  mutate(text_label = str_c("Name: ", dba)) %>% 
+  drop_na() %>% 
+  separate(inspection_date, c("year", "month", "date")) %>% 
+  filter( year == 2022) %>% 
+  group_by(boro, month) %>% 
+  summarise(mean_score = mean(as.numeric(score))) %>% 
   plot_ly(
-    x = ~latitude, y = ~longitude, type = "scatter", mode = "markers",
-    color = ~boro,text = ~text_label,  alpha = 0.5)
+    x = ~month, y = ~mean_score, type = "scatter", mode = "lines",
+    color = ~boro, alpha = 1)
 
 ```
 
