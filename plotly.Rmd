@@ -1,10 +1,12 @@
 ---
-title: "Plotly"
+title: "Original plotly Codes"
 output: 
   html_document:
     toc: true
     toc_float: true
 ---
+
+The New York City Department of Health and Mental Hygiene (DOHMH) conducts unannounced restaurant inspections on an annual basis in order to check for compliance with policies on food handling, food temperature, personal hygiene of restaurant workers, and vermin control. Regulation violations are each worth a pre-specified number of points, which are totaled at the end of the inspection. Scores are converted into grades, where a lower score earns a higher grade.
 
 
 We're going to make some plotly plots.
@@ -16,15 +18,12 @@ library(plotly)
 ```
 
 
-
+First step is to import the dataset through p8105.datasets.
 ```{r}
 data("rest_inspec")
-
 ```
 
-
-
-
+I did some data cleaning, and choose only Italian restaurants for further analysis.
 ```{r}
 data("rest_inspec")
 
@@ -37,9 +36,9 @@ nyc_inspections_italian
 ```
 
 
-
+My first plot:
 ```{r}
-# Plotly line graph: This scatter plot shows the mean score of Italian restaurants in 2017 by month and Borough.
+# Plotly line graph: This scatter plot shows the mean score trends of Italian restaurants through 2017 by Borough.
 nyc_inspections_italian %>%
   separate(inspection_date, c("year", "month", "date")) %>% 
   filter(year == 2017) %>% 
@@ -51,7 +50,7 @@ nyc_inspections_italian %>%
 
 ```
 
-
+My second plot:
 ```{r}
 # Plotly barchart: This barchart shows the number of Italian restaurant with Grade A in different Borough in 2017.
 nyc_inspections_italian %>% 
@@ -62,7 +61,7 @@ nyc_inspections_italian %>%
   plot_ly(x = ~boro, y = ~n, color = ~boro, type = "bar", colors = "viridis")
 ```
 
-
+My third plot:
 ```{r}
 # Plotly boxplot: This boxplot displays the scores in each Borough in 2017. The higher the score, the more severe of the violations.
 nyc_inspections_italian %>% 

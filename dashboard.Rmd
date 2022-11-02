@@ -26,7 +26,7 @@ nyc_inspections_italian =
 Column {data-width=650}
 -----------------------------------------------------------------------
 
-### Chart A
+### Chart A: The mean score of Italian restaurants in 2017 by month and Borough.
 
 
 ```{r}
@@ -44,7 +44,7 @@ nyc_inspections_italian %>%
 Column {data-width=350}
 -----------------------------------------------------------------------
 
-### Chart B
+### Chart B: The number of Italian restaurant with Grade A in different borough in 2017
 
 ```{r}
 # Plotly barchart: This barchart shows the number of Italian restaurant with Grade A in different Borough in 2017.
@@ -56,7 +56,7 @@ nyc_inspections_italian %>%
   plot_ly(x = ~boro, y = ~n, color = ~boro, type = "bar", colors = "viridis")
 ```
 
-### Chart C
+### Chart C: The scores in each Borough in 2017
 
 ```{r}
 # Plotly boxplot: This boxplot displays the scores in each Borough in 2017. The higher the score, the more severe of the violations.

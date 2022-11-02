@@ -6,13 +6,13 @@ output:
     toc_float: true
 ---
 
-##This is Pei's awesome website for P8105 Homework 4
+# This is Pei's website for P8105 Homework 4
 
 ![](https://media.giphy.com/media/4FQMuOKR6zQRO/giphy.gif)
 
-**My name is Pei Liu, I am a 1-st year Biostatistics student at Mailman School of Public Health.**
-
 **Here's some facts... **
+
+- My name is Pei Liu, I am now a 1st-year Biostatistics student at Columbia UNiversity Mailman School of Public Health.
 
 - I like data science. My dream is to become a data scientist.
 
@@ -28,11 +28,11 @@ output:
 
 **There are some components of my websites: **
 
-- My email, github page and linkedin link are in the navigation bar.
+* Links for my email, github page and linkedin are in the navigation bar.
 
-- Here's the page that briefly introduces my [academic and professional experience](about.html)
+* Here's the page that briefly introduces my [academic and professional experience](about.html)
 
-- Here's a page of a [flexdashboard](dashboard.html) using plotly. There are three charts in the dashboard:
-+ A line graph, showing the inspection score trend throughout 2017 by borough. 
-+ A bar chart, showing the number of Italian restaurants in different borough with grade A in 2017. 
-+ A box plot, showing the inspection score in each borough in 2017.
+* Here's a page of a [flexdashboard](dashboard.html) using plotly. The codes that I used to create the plot can be found [here](plotly.html). There are three charts in the dashboard:
+  + A line graph, showing the inspection score trend throughout 2017 by borough. 
+  + A bar chart, showing the number of Italian restaurants in different borough with grade A in 2017. 
+  + A box plot, showing the inspection score in each borough in 2017.
