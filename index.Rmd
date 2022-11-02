@@ -7,7 +7,9 @@ output:
 ---
 
 **This is a website for P8105 Homework 4**
-<img src="https://media.giphy.com/media/4FQMuOKR6zQRO/giphy.gif" class="center">
+
+![](https://media1.giphy.com/media/QpVUMRUJGokfqXyfa1/giphy.gif?cid=ecf05e47at6bpbkaqbg117sf6q5tr6wrasx1u9z1alzl0gbn&rid=giphy.gif&ct=g)
+
 
 
 **Here's some facts... **
