@@ -26,22 +26,23 @@ data("rest_inspec")
 
 
 ```{r}
+data("rest_inspec")
+
 nyc_inspections_italian = 
-  nyc_inspections %>% 
+  rest_inspec %>% 
   drop_na() %>% 
   filter(cuisine_description == "Italian")
 
-head(nyc_inspections_italian, n = 100)
+nyc_inspections_italian
 ```
 
 
 
 ```{r}
-# Plotly scatterplot: This scatter plot shows the mean score of Italian restaurants across 2022 every month by Borough.
+# Plotly line graph: This scatter plot shows the mean score of Italian restaurants in 2017 by month and Borough.
 nyc_inspections_italian %>%
-  drop_na() %>% 
   separate(inspection_date, c("year", "month", "date")) %>% 
-  filter( year == 2022) %>% 
+  filter(year == 2017) %>% 
   group_by(boro, month) %>% 
   summarise(mean_score = mean(as.numeric(score))) %>% 
   plot_ly(
@@ -52,9 +53,10 @@ nyc_inspections_italian %>%
 
 
 ```{r}
-# Plotly barchart: This barchart shows the number of Italian restaurant with Grade A in different Borough.
+# Plotly barchart: This barchart shows the number of Italian restaurant with Grade A in different Borough in 2017.
 nyc_inspections_italian %>% 
-  filter(grade == "A") %>% 
+  separate(inspection_date, c("year", "month", "date")) %>%
+  filter(grade == "A", year == 2017) %>% 
   count(boro) %>% 
   mutate(boro = fct_reorder(boro, n)) %>% 
   plot_ly(x = ~boro, y = ~n, color = ~boro, type = "bar", colors = "viridis")
@@ -62,8 +64,10 @@ nyc_inspections_italian %>%
 
 
 ```{r}
-# Plotly boxplot: This boxplot displays the scores in each Borough. The higher the score, the more severe of the violations.
+# Plotly boxplot: This boxplot displays the scores in each Borough in 2017. The higher the score, the more severe of the violations.
 nyc_inspections_italian %>% 
+  separate(inspection_date, c("year", "month", "date")) %>%
+  filter(year == 2017) %>% 
   mutate(score = as.numeric(score),
     boro = fct_reorder(boro, score)) %>% 
   plot_ly(y = ~score, color = ~boro, type = "box", colors = "viridis")
