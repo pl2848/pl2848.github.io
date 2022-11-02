@@ -12,10 +12,6 @@ We're going to make some plotly plots.
 ```{r}
 library(tidyverse)
 library(p8105.datasets)
-```
-
-
-```{r}
 library(plotly)
 ```
 
@@ -24,7 +20,6 @@ library(plotly)
 ```{r}
 data("nyc_inspections")
 
-head(nyc_inspections, n = 100)
 ```
 
 
@@ -36,15 +31,12 @@ nyc_inspections_italian =
   drop_na() %>% 
   filter(cuisine_description == "Italian")
 
-head(nyc_inspections_italian, n= 100)
-nrow(nyc_inspections_italian)
-
-unique(nyc_inspections_italian$grade)
 ```
 
 
-Plotly scatterplot: This scatter plot shows the distribution of Italian restaurant with grade A.
+
 ```{r}
+# Plotly scatterplot: This scatter plot shows the distribution of Italian restaurant with grade A.
 nyc_inspections_italian %>%
   filter(grade == "A") %>% 
   mutate(text_label = str_c("Name: ", dba)) %>% 
