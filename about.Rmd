@@ -1,13 +1,13 @@
 ---
-title: "About this website"
+title: "About Myself"
 output: 
   html_document:
     toc: true
     toc_float: true
 ---
 
-# This is Pei's awesome website
+# My Resume
 
-This awesome website is made in rmarkdown and other stuff.
+![](Images/resume.png)
 
-
+*Beyond my experience in my resume, I am also currently working on a kaggle project. I will post here once it's finished. *
