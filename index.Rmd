@@ -28,8 +28,11 @@ output:
 
 **There are some components of my websites: **
 
-- My email and github page are in the navigation bar.
+- My email, github page and linkedin link are in the navigation bar.
 
 - Here's the page that briefly introduces my [academic and professional experience](about.html)
 
-- Here's a page with [flexdashboard](dashboard.html) using plotly.
+- Here's a page of a [flexdashboard](dashboard.html) using plotly. There are three charts in the dashboard:
++ A line graph, showing the inspection score trend throughout 2017 by borough. 
++ A bar chart, showing the number of Italian restaurants in different borough with grade A in 2017. 
++ A box plot, showing the inspection score in each borough in 2017.
