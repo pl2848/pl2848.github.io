@@ -3,7 +3,7 @@ output_dir: "."
 navbar:
   title: "Home"
   right:
-    - text: "About"
+    - text: "Personal Experience"
       href: about.html
     - text: "Dashborad"
       href: dashboard.html
@@ -11,6 +11,8 @@ navbar:
       href: mailto:<pl2848@cumc.columbia.edu>
     - icon: fa-github fa-lg
       href: http://github.com/pl2848/
+    - icon: fa-linkedin fa-lg
+      href: https://www.linkedin.com/in/pei-liu-2a775b20a/
 output:
   html_document:
     theme: cosmo

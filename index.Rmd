@@ -6,29 +6,28 @@ output:
     toc_float: true
 ---
 
-# This is Pei's awesome website
+##This is Pei's awesome website for P8105 Homework 4
 
 ![](https://media.giphy.com/media/4FQMuOKR6zQRO/giphy.gif)
+My name is Pei Liu, I am a 1-st year Biostatistics student at Mailman School of Public Health.
 
-Here's some facts, I like the internet. 
+Here's some facts... 
 
-I use [google](https://www.google.com/) all the time to do data science.
+- I like data science. My dream is to become a data scientist.
 
-I use 
+- I use [google](https://www.google.com/) all the time to do data science.
 
-They are my baby cats Tomato and May, who would like to meet you all.
+- [Youtube](https://www.youtube.com) also helps me a lot.
+
+- They are my baby cats Tomato and May, who would like to meet you all.
 <img src="images/tomato.jpg" style="width:45%">
 <img src="images/may.jpg" style="width:45%">
 
-```{r}
-library(tidyverse)
 
-```
+There are some components of my websites: 
 
+- My email and github page are in the navigation bar.
 
-Here's a direct link to the about page: [about](about.html)
+- Here's the page that briefly introduces my [academic and professional experience](about.html)
 
-
-I also made a bonus [extra page](extra_page.html)
-
-Here's a page with [plotly](plotly.html).
+- Here's a page with [flexdashboard](dashboard.html) using plotly.
